@@ -1,6 +1,5 @@
 {
   "name": "acquia/blt-drupal-vm",
-  "type":"composer-plugin",
   "description": "Drupal VM integration for Acquia BLT",
   "license": "GPL-2.0+",
   "authors":[
