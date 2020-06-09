@@ -91,9 +91,9 @@ class VmCommand extends BltTasks {
    */
   public function initialize() {
     $this->drupalVmAlias = $this->getConfigValue('project.machine_name') . '.local';
-    $this->defaultDrupalVmDrushAliasesFile = $this->getConfigValue('blt.root') . '/scripts/drupal-vm/drupal-vm.site.yml';
-    $this->defaultDrupalVmConfigFile = $this->getConfigValue('blt.root') . '/scripts/drupal-vm/config.yml';
-    $this->defaultDrupalVmVagrantfile = $this->getConfigValue('blt.root') . '/scripts/drupal-vm/Vagrantfile';
+    $this->defaultDrupalVmDrushAliasesFile = $this->getConfigValue('repo.root') . '/vendor/acquia/blt-drupal-vm/scripts/drupal-vm/drupal-vm.site.yml';
+    $this->defaultDrupalVmConfigFile = $this->getConfigValue('repo.root') . '/vendor/acquia/blt-drupal-vm/scripts/drupal-vm/config.yml';
+    $this->defaultDrupalVmVagrantfile = $this->getConfigValue('repo.root') . '/vendor/acquia/blt-drupal-vm/scripts/drupal-vm/Vagrantfile';
     $this->projectDrushAliasesFile = $this->getConfigValue('drush.alias-dir') . '/' . $this->getConfigValue('project.machine_name') . '.site.yml';
     $this->projectDrupalVmVagrantfile = $this->getConfigValue('repo.root') . '/Vagrantfile';
     $this->projectDrupalVmConfigFile = $this->getConfigValue('vm.config');
@@ -213,6 +213,7 @@ class VmCommand extends BltTasks {
     $filename = $this->getConfigValue('blt.config-files.local');
     $this->logger->info("Updating $filename");
 
+    touch($filename);
     $contents = Yaml::parse(file_get_contents($filename));
     $contents['vm']['enable'] = TRUE;
     $yaml = Yaml::dump($contents, 3, 2);
