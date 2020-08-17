@@ -379,6 +379,10 @@ class VmCommand extends BltTasks {
       $new_aliases = ArrayManipulator::arrayMergeRecursiveDistinct($project_drush_aliases, $default_drupal_vm_drush_aliases);
     }
 
+    $alias_dir = dirname($this->projectDrushAliasesFile);
+    if (!is_dir($alias_dir)) {
+      mkdir($alias_dir, 0777, TRUE);
+    }
     file_put_contents($this->projectDrushAliasesFile, Yaml::dump($new_aliases));
   }
 
