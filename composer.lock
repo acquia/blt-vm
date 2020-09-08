@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "800484da58a8a28ee11cac239be45fe6",
+    "content-hash": "0b2d82f99bb1f5fa75ad132bd02e29e4",
     "packages": [
         {
             "name": "geerlingguy/drupal-vm",
-            "version": "5.2.0",
+            "version": "6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/geerlingguy/drupal-vm.git",
-                "reference": "f8bb9218f068994f731647997c7ace195f6ee193"
+                "reference": "0257c5dfaaca71f2125d3076976b143a4fd63a86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/geerlingguy/drupal-vm/zipball/f8bb9218f068994f731647997c7ace195f6ee193",
-                "reference": "f8bb9218f068994f731647997c7ace195f6ee193",
+                "url": "https://api.github.com/repos/geerlingguy/drupal-vm/zipball/0257c5dfaaca71f2125d3076976b143a4fd63a86",
+                "reference": "0257c5dfaaca71f2125d3076976b143a4fd63a86",
                 "shasum": ""
             },
             "type": "vm",
@@ -53,7 +53,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-03-20T19:32:20+00:00"
+            "time": "2020-07-14T17:07:45+00:00"
         }
     ],
     "packages-dev": [],
