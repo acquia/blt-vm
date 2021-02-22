@@ -87,7 +87,7 @@ php_packages_extra:
   - imagemagick
 
 # XDebug configuration.
-php_xdebug_version: 2.7.1
+php_xdebug_version: 2.9.8
 # Change this value to 1 in order to enable xdebug by default.
 php_xdebug_default_enable: 0
 php_xdebug_cli_disable: yes
