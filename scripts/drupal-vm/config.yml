@@ -84,6 +84,7 @@ php_version: "7.3"
 php_packages_extra:
   - "php{{ php_version }}-bz2"
   - "php{{ php_version }}-imagick"
+  - 'php{{ php_version }}-zip'
   - imagemagick
 
 # XDebug configuration.
