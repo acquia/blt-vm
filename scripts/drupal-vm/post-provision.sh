@@ -21,6 +21,9 @@ if [ ! -e "$BLT_LAUNCHER_SETUP_COMPLETE_FILE" ]; then
   
   # Rename blt.phar to blt and move it to /usr/local/bin/blt a location in $PATH
   sudo mv /tmp/blt.phar /usr/local/bin/blt
+  
+  # Create a file to indicate this script has already run.
+  sudo touch $BLT_LAUNCHER_SETUP_COMPLETE_FILE
 else
   exit 0
 fi
