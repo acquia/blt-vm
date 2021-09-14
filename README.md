@@ -13,7 +13,7 @@ To use this plugin, you must already have a Drupal project using BLT 12 or highe
 
 In your project, require the plugin with Composer:
 
-`composer require acquia/blt-drupal-vm`
+`composer require acquia/blt-drupal-vm --dev`
 
 # License
 
